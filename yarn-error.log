@@ -1,0 +1,41 @@
+Arguments: 
+  /Users/sysall/.nvm/versions/node/v16.20.0/bin/node /usr/local/bin/yarn add typescript ts-node @types/node @sw/core --dev
+
+PATH: 
+  /Users/sysall/.nvm/versions/node/v16.20.0/bin:/Users/sysall/google-cloud-sdk/bin:/Users/sysall/flutter/bin:/Users/sysall/Library/Python/3.9/bin:brownie:/usr/local/bin:/usr/bin:/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/sysall/.nvm/versions/node/v16.20.0/bin:/Users/sysall/google-cloud-sdk/bin:/Users/sysall/flutter/bin:/Users/sysall/Library/Python/3.9/bin:brownie:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/sysall/.local/bin:/Users/sysall/Library/Python/3.11/bin:/Users/sysall/.pub-cache/bin:/Users/sysall/.local/bin:/Users/sysall/Library/Python/3.11/bin:/Users/sysall/.pub-cache/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.20.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@sw%2fcore: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "my_first_project",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
