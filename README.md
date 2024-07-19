@@ -33,3 +33,15 @@ To load the stored address we are using ~load_msg_addr to load the address.
 - store in c4 the address of the sender of the last message and the integer total - a 32-bit unsigned number;
 - when receiving an internal incoming message, the contract must take the address from in_msg, a 32-bit unsigned integer from the body of the message, add it to total, and store the address and amount in the contract data;
 - The smart contract must have a get_sum method that allows you to return the total value;
+
+# Improvement V1 :
+We are going to rewrite our contract, so that it will have following logic:
+
+It will receive a message with a specific command (commands are usd to identify which part of the functionality of our contract should be executed against the data received in message)
+Based on this specific command, it increases the number that is stored in our c4 storage.
+It provides a getter method that is returning current counter value and the address that has sent the message with increment op code.
+
+- our contract will become more strict on commands, we are going to introduce a new op code meant for logic of depositing funds to the contract
+- During the withdrawal process, the funds are actually sent to the address as a message
+- any funds that will arrive with unknown operation codes will be returned to the sender
+- Only owner of the contract is able to withdraw funds.
